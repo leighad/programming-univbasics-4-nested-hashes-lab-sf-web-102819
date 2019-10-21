@@ -80,13 +80,13 @@ def adding_matz
           :languages => ["C"]
         }
      }
-     updated_programmer_hash = programmer_hash.unshift(
+     updated_programmer_hash = programmer_hash <<
        :yukihiro_matsumoto => {
          :known_for => "Ruby",
          :languages => ["LISP", "C"]
        }
-       )
-       return updated_programmer_hash
+       
+       return updated_programmer_hash.reverse
 
 end
 
